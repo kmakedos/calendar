@@ -32,4 +32,6 @@
 *.app
 .idea
 cmake-build-debug
+test/libs
+test/cmake-build-debug
 
