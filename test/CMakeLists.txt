@@ -6,7 +6,7 @@ find_package (Boost REQUIRED COMPONENTS unit_test_framework system filesystem da
 include_directories (${Boost_INCLUDE_DIRS})
 
 
-add_subdirectory(libs)
+add_subdirectory(libs/googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR} ..)
 add_executable(Tests_run CalendarTest.cpp ../Calendar.cpp)
 target_link_libraries(Tests_run gtest gtest_main)
