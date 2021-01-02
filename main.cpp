@@ -2,8 +2,6 @@
 #include "Calendar.h"
 using namespace std;
 int main(int argc, char *argv[]) {
-    Calendar c = Calendar(12,2020);
-    std::cout << c << std::endl;
     string usage = "Usage: calendar <month> <year>";
     if (argc < 3){
         cerr << "Not enough arguments " << endl;
@@ -17,4 +15,6 @@ int main(int argc, char *argv[]) {
     if ((month < 1 ) || (month > 12)){
         cerr << "Invalid month, range 1~12" << endl;
     }
+    Calendar c = Calendar(month,year);
+    std::cout << c << std::endl;
 }
